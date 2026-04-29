@@ -1,0 +1,7 @@
+body{
+    margin:0;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0)60%, white 100%), url(https://images.squarespace-cdn.com/content/v1/62b3d94db1c228153c945edd/93a444f8-a345-47fc-aa19-89f899f4fffb/IMG_4460.webp?format=1500w) 
+}
