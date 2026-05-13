@@ -1,9 +1,25 @@
 body{
     margin:0;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0)10%, white 100%), url(https://images.squarespace-cdn.com/content/v1/62b3d94db1c228153c945edd/93a444f8-a345-47fc-aa19-89f899f4fffb/IMG_4460.webp?format=1500w)
+    background-position:top center;
+    background-repeat:no-repeat;
+    background-size:
+    100%,
+    100%;
+    background-image:
+    linear-gradient(
+        to bottom,
+        rgba(0,0,0,0) 10%,
+        white 100%
+    ),
+    url(assets/background.JPG);
+}
+
+@media (max-width:390px){
+    body{
+        background-size:
+        100%,
+        190%;
+    }
 }
 
 .button1{
@@ -15,15 +31,81 @@ body{
     margin: 3px;
 }
 
-.navigation{
-    display:flex;
-    gap: 30px;
-    color:white;
-    font-size: 20px;
-    padding: 10px 40px;
-    justify-content:right;
+.navigation {
     background-color: rgb(61, 16, 16);
-    border: 2px solid white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.desktop-nav p {
+    color: white;
+}
+
+.menu-icon { 
+    display: none; 
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -260px;
+    width: 240px;
+    height: 100vh;
+    background-color: rgb(61, 16, 16);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding-top: 80px;
+    transition: right 0.3s;
+    z-index: 1000;
+}
+
+.side-menu p {
+    color: white;
+    font-size: 18px;
+}
+
+.side-menu.open {
+    right: 0;
+}
+
+.close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background:none;
+    color: white;
+    border: none;
+    font-size: 35px;
+}
+
+@media (max-width: 390px) {
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .navigation {
+        justify-content: flex-end;
+        padding: 15px 20px;
+    }
+
+    .menu-icon {
+        display: block;
+        background: none;
+        color: white;
+        border: none;
+        font-size: 32px;
+    }
 }
 
 .logo1{
@@ -34,16 +116,31 @@ body{
 
 h1{
     color:white;
-    font-size: 55px;
+    font-size: 45px;
     text-align: center;
-    margin: 0 8em 0 8em;
+    width: 40%;
+    margin: auto;
+}
+
+@media (max-width:390px){
+    h1{
+        font-size:32px;
+    }
 }
 
 .intro-text p{
     font-size: 20px;
     text-align: center;
     color:white;
-    margin: 2em 20em 2em 20em;
+    margin: auto;
+    margin-top:20px;
+    width: 50%;
+}
+
+@media (max-width:390px){
+    .intro-text p{
+        font-size:15px;
+    }
 }
 
 .button2{
@@ -52,8 +149,10 @@ h1{
     align-items:center;
     gap:10px;
     border-radius: 10px;
+    margin-top: 20px;
     padding: 12px 35px;
 }
+
 
 .button2 button{
     background-color: darkred;
@@ -61,17 +160,81 @@ h1{
     font-size: 27px;
 }
 
+@media (max-width:390px){
+    .button2 button{
+        font-size: 20px;
+    }
+}
+
 .secintro-text{
-    margin: 20em 7em 15em 8em;
+    margin: 20em 7em 12em 8em;
     display:flex;
     gap:80px;
     align-items:center;
+}
+
+@media (max-width:390px){
+    .secintro-text{
+        flex-direction:column;
+        margin: auto;
+        gap: 10px
+    }
+    
+    .secintro-text img{
+        margin-top: 45px;
+        width:70%;
+    }
 }
 
 .text{
     display:flex;
     flex-direction:column;
     align-items:center;
-    gap:50px;
+    gap:40px;
     margin:3em;
+}
+
+.end{
+    background-color:rgb(61, 16, 16);
+    display: flex;
+    color:white;
+    padding: 2em 7em 4em 4em;
+}
+
+.logo2{
+    width: 10%;
+}
+
+.footer-left{
+    margin-left: 7em;
+    margin-top: 2em;
+    font-size: 20px;
+}
+
+th{
+    width:160px;
+    text-align:left;
+}
+
+th, td{
+    padding: 10px 10px;
+}
+
+@media (max-width:390px){
+    .end{
+        flex-direction:column;
+        gap:20px;
+    }
+    
+    .end p{
+        font-size: 15px;
+    }
+
+    .logo2{
+        width:30%;
+    }
+
+    .footer-left{
+        margin:auto;
+    }
 }
