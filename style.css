@@ -287,6 +287,7 @@ th, td{
     border-radius: 50%;
     left: -160px;
     top: 230px;
+    z-index: -1;
 }
 
 .menu-section {
@@ -368,7 +369,6 @@ th, td{
     background-color: #8b1d16;
 }
 
-
 .total-box {
     width: 330px;
     height: 55px;
@@ -382,7 +382,6 @@ th, td{
     align-items: center;
     box-shadow: 0 5px 8px rgba(0,0,0,0.25);
 }
-
 
 .note {
     text-align: center;
