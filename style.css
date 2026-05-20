@@ -278,3 +278,14 @@ th, td{
     font-size: 42px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.3);
 }
+
+.backgroundcircle {
+    position: absolute;
+    width: 1000px;
+    height: 1000px;
+    background-color: rgba(139, 49, 49, 0.45);
+    border-radius: 50%;
+    left: -160px;
+    top: 230px;
+}
+
