@@ -289,3 +289,102 @@ th, td{
     top: 230px;
 }
 
+.menu-section {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.shoppingcard {
+    width: 320px;
+    height: 610px;
+    border-radius: 25px;
+    padding: 35px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: inset 0 0 35px rgba(0,0,0,0.25);
+}
+
+.shoppingcard h2 {
+    font-size: 30px;
+    line-height: 1;
+    margin-bottom: 35px;
+}
+
+.shoppingcard p {
+    font-size: 13px;
+    line-height: 1.3;
+    width: 85%;
+    margin: 0 auto 25px;
+}
+
+.shoppingcard img {
+    width: 210px;
+    height: 220px;
+    border-radius: 18px;
+    margin-bottom: 30px;
+}
+
+.read-button {
+    background-color: #8b1d16;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 45px;
+    font-size: 18px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.price span {
+    font-size: 45px;
+}
+
+.price {
+    color: #8b1d16;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.quantity button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    font-size: 22px;
+    color: white;
+    background-color: #8b1d16;
+}
+
+.total-box {
+    width: 330px;
+    height: 55px;
+    font-size: 26px;
+    margin: 45px 50px 0 auto;
+    background-color: #7b3a32;
+    color: white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 5px 8px rgba(0,0,0,0.25);
+}
+
+
+.note {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 45px;
+}
