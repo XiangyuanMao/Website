@@ -9,6 +9,9 @@
 <body>
     <div class="navigation">
 
+        <button class="back-button"
+        onclick="window.location.href='index.html'">←</button>
+
       <div class="desktop-nav">
         <p>Contact us</p>
         <p>About Us</p>
@@ -46,15 +49,20 @@
 
 
             <div class="shoppingcard">
-
-                <h2>10 Course Vegan<br>Degustation</h2>
-                <p>SHU's 10 course vegan degustation is a unique set menu that consists of 10 dishes inspired by the iconic Sichuan cuisine.</p>
+                
 
                 <img src="assets/dish1.webp" alt="10 Course Vegan Degustation">
 
-                <button class="read-button">Read More</button>
+                
+                <div class="card-text">
 
-                <div class="bottom-row">
+                    <h2>10 Course Vegan<br>Degustation</h2>
+                    <p>SHU's 10 course vegan degustation is a unique set menu that consists of 10 dishes inspired by the iconic Sichuan cuisine.</p>
+                
+
+                    <button class="read-button">Read More</button>
+
+                 <div class="bottom-row">
 
                     <div class="price">
                         <span>$95</span> per person
@@ -65,19 +73,23 @@
                         <span id="quantity0">0</span>
                         <button onclick="changeQty(0, -1)">-</button>
                     </div>
+                 </div>
                 </div>
+
+                
 
             </div>
             
 
             <div class="shoppingcard">
 
-            
+            <img src="assets/dish2.webp" alt="Chef Pick Vegan">
+
+              <div class="card-text">
                 <h2>Chef's Pick: 5-Course Vegan</h2>
 
                 <p>Daikon pot plant of raw baby veggies, grilled exotic mushrooms, pickled chilli and Sichuan flavours.</p>
 
-                <img src="assets/dish2.webp" alt="Chef Pick Vegan">
 
                 <button class="read-button">Read More</button>
 
@@ -92,17 +104,21 @@
                         <button onclick="changeQty(1, -1)">-</button>
                     </div>
                 </div>
+              </div>
 
             </div>
            
 
             <div class="shoppingcard">
 
+            <img src="assets/dish3.webp" alt="Unlimited Yum Cha">
+
+             <div class="card-text">
+
                 <h2>Unlimited <br> Yum Cha</h2>
 
                 <p>Unlimited Yum Cha lunch every Saturday/Sunday for two hours. Sitting time: 12pm-2pm / 1pm-3pm</p>
 
-                <img src="assets/dish3.webp" alt="Unlimited Yum Cha">
 
                 <button class="read-button">Read More</button>
 
@@ -117,7 +133,8 @@
                         <span id="quantity3">0</span>
                         <button onclick="changeQty(2, -1)">−</button>
                     </div>
-                </div>
+               </div>
+              </div>
             </div>
         </section>
 
@@ -177,46 +194,6 @@
        </div>
    </div>
 
-<script>
-    function openMenu() {
-        document.getElementById("sideMenu").classList.add("open");
-    }
-
-    function closeMenu() {
-        document.getElementById("sideMenu").classList.remove("open");
-    }
-
-let quantities = [0, 0, 0];
-
-let prices = [95, 75, 65];
-
-    function changeQty(index, change) {
-
-        quantities[index] = quantities[index] + change;
-
-        if (quantities[index] < 0) {
-            quantities[index] = 0;
-        }
-
-        document.getElementById("quantity" + index).textContent = quantities[index];
-
-        updateTotal();
-    }
-
-    function updateTotal() {
-
-      let total = 0;
-
-        for (let i = 0; 
-             i < quantities.length; 
-             i=i+1) {
-           total = total + quantities[i] * prices[i];
-        }
-
-      document.getElementById("total").textContent = "$ " + total;
-    }
-
-
-</script>
+<script src="Script.js"></script>
 </body>
 </html>
