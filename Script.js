@@ -6,13 +6,7 @@
     function closeMenu() {
         document.getElementById("sideMenu").classList.remove("open");
     }
-    function openMenu() {
-        document.getElementById("sideMenu").classList.add("open");
-    }
 
-    function closeMenu() {
-        document.getElementById("sideMenu").classList.remove("open");
-    }
 
     
 let quantities = [0, 0, 0];
