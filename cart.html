@@ -15,22 +15,7 @@
 
             <div class="cart-left">
 
-                <div class="cart-item">
-
-                    <img src="assets/dish1.webp" alt="10 Course Vegan Degustation">
-
-                    <div class="cart-info">
-                        <h2>10 Course Vegan Degustation</h2>
-                        <p>$95</p>
-                    </div>
-
-                    <div class="cart-quantity">
-                        <button onclick="changeQty(0, 1)">+</button>
-                        <span id="quantity0">0</span>
-                        <button onclick="changeQty(0, -1)">−</button>
-                    </div>
-
-                </div>
+                <div id="cart-items"></div>
 
             </div>
 
@@ -39,14 +24,15 @@
             <div class="cart-right">
 
                 <div class="cart-total">
-                    TOTAL: <span id="total">$ 0</span>
+                    TOTAL:
+                    <span id="total">$ 0</span>
                 </div>
 
                 <button class="cart-action" onclick="window.location.href='OrderOnline.html'">
                     ADD MORE
                 </button>
 
-                <button class="cart-action">
+                <button class="cart-action" onclick="payNow()">
                     PAY
                 </button>
 
@@ -55,6 +41,7 @@
         </div>
 
     </div>
+
 
     <script src="script.js"></script>
 </body>
