@@ -40,7 +40,7 @@
             <p>🔍</p>
             <input type="text" placeholder="Search">
         </div>
-        <button class="carticon" onclick="window.location.href='cart.html'">🛒</button>
+        <button class="carticon" onclick="openCart()">🛒</button>
         </div>
 
         <div class="backgroundcircle"></div>
@@ -193,6 +193,46 @@
              </table>
        </div>
    </div>
+
+
+
+   <div class="cart-overlay" id="cartOverlay">
+
+    <div class="cart-box">
+
+        <h1>CART</h1>
+
+        <div class="cart-left">
+
+            <div id="cart-items"></div>
+
+        </div>
+
+        <div class="cart-line"></div>
+
+        <div class="cart-right">
+
+            <div class="cart-total">
+                TOTAL:
+                <span id="total">$0</span>
+            </div>
+
+            <button class="cart-action">
+                ADD MORE
+            </button>
+
+            <button class="cart-action">
+                PAY
+            </button>
+
+        </div>
+
+        <button class="close-cart"
+        onclick="closeCart()">✕</button>
+
+    </div>
+
+</div>
 
 <script src="Script.js"></script>
 </body>
