@@ -497,8 +497,6 @@ th, td{
         margin-top:0;
     }
     
-
-    
 }
 
 .total-box {
@@ -540,3 +538,29 @@ th, td{
 
 
 
+
+
+
+
+
+.cart-page {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cart-box {
+    display: flex;
+    width: 760px;
+    height: 500px;
+    background:
+        radial-gradient(circle at 20% 25%, rgba(170, 80, 80, 0.35), transparent 35%),
+        radial-gradient(circle at 80% 80%, rgba(170, 80, 80, 0.45), transparent 35%),
+        white;
+    border-radius: 20px;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.22);
+    position: absolute;
+}
