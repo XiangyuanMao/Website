@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHU restaurant - Payment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pay-page">
+
+        <div class="navigation">
+
+        <button class="back-button"
+        onclick="window.location.href='index.html'">←</button>
+
+      <div class="desktop-nav">
+        <p>Contact us</p>
+        <p>About Us</p>
+        <button class="button1" onclick="window.location.href='OrderOnline.html'">Order Online</button>
+        <button class="button1" onclick="window.location.href=''">Book Now</button>
+      </div>
+
+      <button class="menu-icon" onclick="openMenu()">☰</button>
+
+    </div>
+
+    <div class="side-menu" id="sideMenu">
+
+        <button class="close" onclick="closeMenu()">×</button>
+
+         <p>Contact us</p>
+         <p>About Us</p>
+        <button class="button1" onclick="window.location.href='OrderOnline.html'">Order Online</button>
+        <button class="button1" onclick="window.location.href=''">Book Now</button>
+
+    </div>
+
+        <main class="pay-content">
+
+            <h1>Payment Details</h1>
+
+            <form class="pay-form">
+
+                <label>Name on Card</label>
+                <input type="text" placeholder="Eric Shu">
+
+                <label>Card Number</label>
+                <input type="text" placeholder="1234-5678-9810-1112">
+
+                <div class="pay-small-row">
+
+                    <div>
+                        <label>CVV</label>
+                        <input type="text" placeholder="377">
+                    </div>
+
+                    <div>
+                        <label>Expiry Date</label>
+                        <input type="text" placeholder="29/29">
+                    </div>
+
+                </div>
+
+                <div class="pay-info-row">
+                    <label>Eat Date:</label>
+                    <input type="text" placeholder="01-05-2026">
+                </div>
+
+                <div class="pay-info-row">
+                    <label>Time:</label>
+                    <input type="text" placeholder="18:00 -20:00">
+                </div>
+
+                <div class="pay-info-row">
+                    <label>People:</label>
+                    <input type="text" placeholder="2 people">
+                </div>
+
+                <button type="button" class="confirm-btn" onclick="confirmPay()">
+                    CONFIRM
+                </button>
+
+            </form>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
