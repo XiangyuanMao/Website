@@ -798,3 +798,26 @@ th, td{
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pay-page {
+    min-height: 100vh;
+
+    background:
+        radial-gradient(circle at 70% 65%,
+            rgba(170, 80, 80, 0.38),
+            transparent 45%),
+        white;
+}
