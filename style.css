@@ -904,3 +904,37 @@ th, td{
     box-shadow: 0 5px 10px rgba(0,0,0,0.25);
 }
 
+@media (max-width: 390px) {
+
+    .pay-content {
+        padding-top: 70px;
+    }
+
+    .pay-content h1 {
+        font-size: 32px;
+
+        margin-bottom: 55px;
+    }
+
+    .pay-form {
+        width: 310px;
+    }
+
+    .pay-form label {
+        font-size: 16px;
+    }
+
+    .pay-small-row {
+        gap: 15px;
+    }
+
+    .pay-info-row label {
+        width: 70px;
+    }
+
+    .confirm-btn {
+        width: 260px;
+
+        margin-top: 60px;
+    }
+}
