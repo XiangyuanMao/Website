@@ -7,6 +7,7 @@ body h2{
     font-style: italic;
 }
 
+/* */css for indexhtml
 
 .page{
     margin:0;
@@ -262,7 +263,7 @@ th, td{
 
 
 
-
+/* */css for orderonlinehtml
 
 .top-bar{
     display: flex;
@@ -548,9 +549,7 @@ th, td{
 
 
 
-
-
-
+/* */css for cart popup window
 
 .cart-overlay {
     position: fixed;
@@ -811,16 +810,7 @@ th, td{
 
 
 
-
-
-
-
-
-
-
-
-
-
+/* */css for payhtml
 
 .pay-page {
     min-height: 100vh;
@@ -951,10 +941,7 @@ th, td{
 
 
 
-
-
-
-
+/* */css for success popup window
 
 .success-overlay {
     position: fixed;
@@ -1143,8 +1130,7 @@ th, td{
 
 
 
-
-
+/* */css for menu1 and menu2html
 
 .course-page {
     background:
@@ -1337,7 +1323,7 @@ th, td{
 
 
 
-
+/* */css for menu3html
 
 .menu3-page {
     background:
