@@ -1114,7 +1114,7 @@ th, td{
 
     .firework-green {
         left: 190px;
-        top: 200px;
+        top: 200 px;
     }
 
     .firework-pink {
@@ -1127,3 +1127,126 @@ th, td{
         top: 300px;
     }
 }
+
+
+
+
+
+
+
+
+
+.course-page {
+    background:
+        radial-gradient(circle at 72% 8%, rgba(170, 80, 80, 0.35), transparent 30%),
+        radial-gradient(circle at 28% 35%, rgba(170, 80, 80, 0.35), transparent 28%),
+        radial-gradient(circle at 72% 68%, rgba(170, 80, 80, 0.35), transparent 30%),
+        white;
+    padding-top: 60px;
+}
+
+.course-intro {
+    width: 70%;
+    margin: 0 auto 80px;
+    text-align: center;
+}
+
+.course-intro h1 {
+    font-size: 55px;
+    line-height: 0.9;
+    margin-bottom: 45px;
+    color:black;
+}
+
+.course-intro p {
+    font-size: 20px;
+    margin: 15px;
+}
+
+.dish-gallery {
+    position: relative;
+    width: 900px;
+    min-height: 3200px;
+    margin: 0;
+}
+
+.dish {
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.dish img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.dish p {
+    width: 130px;
+    color: darkred;
+    font-size: 20px;
+}
+
+
+.dish1 {
+    top: 0;
+    left: 500px;
+    flex-direction: row;
+}
+
+.dish2 {
+    top: 330px;
+    left: -80px;;
+}
+
+.dish3 {
+    top: 480px;
+    right: -650px;
+    flex-direction: row-reverse;
+}
+
+.dish4 {
+    top: 850px;
+    left: 170px;
+    flex-direction: row-reverse;
+}
+
+.dish5 {
+    top: 1300px;
+    right: -650px;
+    flex-direction: row-reverse;
+}
+
+.dish6 {
+    top: 1400px;
+    left: -80px;
+    flex-direction: row;
+}
+
+.dish7 {
+    top: 1800px;
+    right: -400px;
+    flex-direction: row;
+}
+
+.dish8 {
+    top: 2000px;
+    left: -70px;
+    flex-direction: row;
+}
+
+.dish9 {
+    top: 2350px;
+    right: -650px;
+    flex-direction: row-reverse;
+}
+
+.dish10 {
+    top: 2600px;
+    left: 120px;
+    flex-direction: row;
+}
+
