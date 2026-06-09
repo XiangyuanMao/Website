@@ -1,3 +1,14 @@
+
+body h1{
+    font-family: "Pacifico", cursive;
+    font-style: italic;
+}
+body h2{
+    font-family: "Pacifico", cursive;
+    font-style: italic;
+}
+
+
 .page{
     margin:0;
     background-position:top center;
@@ -1191,7 +1202,7 @@ th, td{
     margin: 10px;
 }
 
-.dish p {
+.dish h2 {
     width: 130px;
     color: darkred;
     font-size: 26px;
@@ -1313,7 +1324,7 @@ th, td{
         height: 220px;
     }
 
-    .dish p {
+    .dish h2 {
         width: 220px;
         font-size: 18px;
         text-align: center;
@@ -1321,3 +1332,85 @@ th, td{
     
 
 }
+
+
+
+
+
+
+
+
+.menu3-page {
+    background:
+        radial-gradient(circle at 75% 5%, rgba(170, 80, 80, 0.35), transparent 30%),
+        radial-gradient(circle at 15% 70%, rgba(170, 80, 80, 0.35), transparent 30%),
+        white;
+    padding-top: 70px;
+}
+
+.menu3-hero {
+    text-align: center;
+}
+
+.menu3-hero h1 {
+    font-size: 60px;
+    margin-bottom: 60px;
+    color:black;
+}
+
+.menu3-main-img {
+    width: 700px;
+    height: 320px;
+    object-fit: cover;
+}
+
+.menu3-info {
+    width: 650px;
+    margin: 40px auto 80px;
+    text-align: center;
+}
+
+.menu3-info h2 {
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+.menu3-info p,
+.menu3-info li {
+    font-size: 18px;
+    line-height: 1.1;
+}
+
+.menu3-info ul {
+    list-style-position: inside;
+    padding: 0;
+    margin: 25px 0;
+}
+
+.menu3-grid {
+    margin:10px 0 10px 100px;
+    width: 820px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 45px;
+    row-gap: 80px;
+}
+
+.menu3-dish {
+    text-align: center;
+}
+
+.menu3-dish img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.menu3-dish h2 {
+    color: darkred;
+    font-size: 20px;
+    line-height: 0.95;
+    margin-top: 18px;
+}
+
+
