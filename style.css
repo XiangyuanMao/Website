@@ -1187,7 +1187,7 @@ th, td{
 .dish p {
     width: 130px;
     color: darkred;
-    font-size: 20px;
+    font-size: 26px;
 }
 
 
@@ -1250,3 +1250,57 @@ th, td{
     flex-direction: row;
 }
 
+@media (max-width: 390px) {
+
+    .course-page{
+        width:100%;
+        max-width:100%;
+        overflow-x:hidden;
+    }
+
+    .course-intro {
+        width: 85%;
+        margin-bottom: 50px;
+    }
+
+    .course-intro h1 {
+        font-size: 28px;
+    }
+
+    .course-intro p {
+        font-size: 13px;
+    }
+
+    .dish-gallery{
+        display:flex;
+        overflow-x:auto;
+        overflow-y:hidden;
+        gap:30px;
+        scroll-snap-type:x mandatory;
+        min-height:200px;
+        width:100%
+    }
+    
+
+    .dish {
+        position: static;
+        flex:0 0 auto;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        scroll-snap-align:center;
+    }
+
+    .dish img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .dish p {
+        width: 220px;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+
+}
