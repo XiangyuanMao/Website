@@ -108,3 +108,12 @@ function addCart(){
         }
     }
 }
+
+
+function showSuccess() {
+    document.getElementById("successOverlay").classList.add("show");
+}
+
+function closeSuccess() {
+    document.getElementById("successOverlay").classList.remove("show");
+}

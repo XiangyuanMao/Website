@@ -6,6 +6,22 @@
     <title>SHU restaurant - Payment</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<div class="success-overlay" id="successOverlay">
+
+    <div class="success-box">
+
+        <button class="success-back" onclick="closeSuccess()">←</button>
+
+        
+        <div class="firework firework-green"></div>
+        <div class="firework firework-pink"></div>
+        <div class="firework firework-purple"></div>
+
+        <h2>Payment Successful!</h2>
+
+    </div>
+
+</div>
 <body>
     <div class="pay-page">
 
@@ -77,10 +93,9 @@
                     <input type="text" placeholder="2 people">
                 </div>
 
-                <button type="button" class="confirm-btn" onclick="confirmPay()">
-                    CONFIRM
+                <button type="button" class="confirm-btn" onclick="showSuccess()">
+                      CONFIRM
                 </button>
-
             </form>
 
         </main>
