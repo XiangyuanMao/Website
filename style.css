@@ -1170,6 +1170,13 @@ th, td{
     margin: 0;
 }
 
+.dish-gallery2 {
+    position: relative;
+    width: 900px;
+    min-height: 1800px;
+    margin: 0;
+}
+
 .dish {
     position: absolute;
     display: flex;
@@ -1272,6 +1279,16 @@ th, td{
     }
 
     .dish-gallery{
+        display:flex;
+        overflow-x:auto;
+        overflow-y:hidden;
+        gap:30px;
+        scroll-snap-type:x mandatory;
+        min-height:200px;
+        width:100%
+    }
+
+    .dish-gallery2{
         display:flex;
         overflow-x:auto;
         overflow-y:hidden;
