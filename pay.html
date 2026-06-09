@@ -59,43 +59,44 @@
             <form class="pay-form">
 
                 <label>Name on Card</label>
-                <input type="text" placeholder="Eric Shu">
+                <input type="text" id="cardName" placeholder="Eric Shu">
 
                 <label>Card Number</label>
-                <input type="text" placeholder="1234-5678-9810-1112">
+                <input type="text" id="cardNumber" placeholder="1234-5678-9810-1112">
 
                 <div class="pay-small-row">
 
                     <div>
                         <label>CVV</label>
-                        <input type="text" placeholder="377">
+                        <input type="text" id="cvv" placeholder="377">
                     </div>
 
                     <div>
                         <label>Expiry Date</label>
-                        <input type="text" placeholder="29/29">
+                        <input type="text" id="expiry" placeholder="29/29">
                     </div>
 
                 </div>
 
                 <div class="pay-info-row">
                     <label>Eat Date:</label>
-                    <input type="text" placeholder="01-05-2026">
+                    <input type="text" id="eatDate" placeholder="01-05-2026">
                 </div>
 
                 <div class="pay-info-row">
                     <label>Time:</label>
-                    <input type="text" placeholder="18:00 -20:00">
+                    <input type="text" id="time" placeholder="18:00 -20:00">
                 </div>
 
                 <div class="pay-info-row">
                     <label>People:</label>
-                    <input type="text" placeholder="2 people">
+                    <input type="text" id="people" placeholder="2 people">
                 </div>
 
-                <button type="button" class="confirm-btn" onclick="showSuccess()">
+                <button type="button" class="confirm-btn" onclick="confirmPayment()">
                       CONFIRM
                 </button>
+                <p id="error-message"></p>
             </form>
 
         </main>
