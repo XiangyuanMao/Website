@@ -109,6 +109,35 @@ function addCart(){
     }
 }
 
+function confirmPayment() {
+
+    const cardName = document.getElementById("cardName").value.trim();
+    const cardNumber = document.getElementById("cardNumber").value.trim();
+    const cvv = document.getElementById("cvv").value.trim();
+    const expiry = document.getElementById("expiry").value.trim();
+    const eatDate = document.getElementById("eatDate").value.trim();
+    const time = document.getElementById("time").value.trim();
+    const people = document.getElementById("people").value.trim();
+
+    const error = document.getElementById("error-message");
+
+    if (
+        cardName === "" ||
+        cardNumber === "" ||
+        cvv === "" ||
+        expiry === "" ||
+        eatDate === "" ||
+        time === "" ||
+        people === ""
+    ) {
+        error.textContent = "Please complete all required information.";
+        return;
+    }
+
+    error.textContent = "";
+
+    showSuccess();
+}
 
 function showSuccess() {
     document.getElementById("successOverlay").classList.add("show");
