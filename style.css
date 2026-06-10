@@ -1,6 +1,6 @@
 
 body h1{
-    font-family: "Pacifico", cursive;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
 }
 body h2{
@@ -904,11 +904,18 @@ th, td{
     box-shadow: 0 5px 10px rgba(0,0,0,0.25);
 }
 
+#error-message{
+    color:red;
+    font-size:14px;
+    text-align:center;
+    margin-top:16px;
+}
+
 @media (max-width: 390px) {
 
     .pay-content {
         padding-top: 70px;
-    }
+    }f d x z x
 
     .pay-content h1 {
         font-size: 32px;
